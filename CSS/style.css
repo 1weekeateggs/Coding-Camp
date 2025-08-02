@@ -65,7 +65,7 @@ nav {
 }
 
 .banner-img-profile {
-    background-image: url(Coding-Camp/Images/6082304124071822908.webp);
+    background-image: url("https://raw.githubusercontent.com/1weekeateggs/Coding-Camp/main/Images/6082304124071822908.webp");
     border-radius: 20px;
     background-size: cover;
     background-position: center;
