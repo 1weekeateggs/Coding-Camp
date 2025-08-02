@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1weekeateggs Portfolio</title>
+
+    <!--Favicon-->
+    <link rel="icon" href="Images\Pana.ico" type="image/x-icon">
+
+    <!--Tailwind CSS-->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!--CSS normal-->
+    <link href="CSS\style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Content -->
+    <header class="w-full z-50">
+        
+        <!-- Desktop Navbar -->
+        <div class="hidden md:flex sticky bg-stone-700/50 shadow-md px-6 py-3 m-[8px] rounded-[16px] justify-between items-center">
+            
+            <!--Logo-->
+            <img src="Images/Illustration67.png" alt="logo" class="h-12 w-auto block object-cover" />
+            
+            <!-- Navigation -->
+            <nav class="flex space-x-2">
+                <a class="rounded-[8px] px-[8px] py-[4px] bg-yellow-400 transition-all duration-300 ease-in-out hover:bg-white hover:scale-105 text-black font-bold" href="#home">Home</a>
+
+                <a class="rounded-[8px] px-[8px] py-[4px] bg-yellow-400 transition-all duration-300 ease-in-out hover:bg-white hover:scale-105 text-black font-bold" href="#profile">Our Profile</a>
+
+                <a class="rounded-[8px] px-[8px] py-[4px] bg-yellow-400 transition-all duration-300 ease-in-out hover:bg-white hover:scale-105 text-black font-bold" href="#portfolio">Portfolio</a>
+
+                <a class="rounded-[8px] px-[8px] py-[4px] bg-yellow-400 transition-all duration-300 ease-in-out hover:bg-white hover:scale-105 text-black font-bold" href="#contact">Message Us</a>
+            </nav>
+        </div>
+
+         <!-- Mobile Navbar -->
+        <div class="md:hidden flex bg-stone-700/50 shadow-sm px-4 py-3 justify-between items-center">
+            <!--Logo-->
+            <img src="Images/Illustration67.png" alt="logo" class="h-12 w-auto block object-cover" />
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="text-black font-bold text-2xl transition-all duration-300 ease-in-out active:text-yellow-400">☰</button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden flex-col items-start bg-sky-100/40 px-4 py-2 space-y-2 shadow-md">
+
+            <a class="block rounded-[8px] px-3 py-2 bg-yellow-400 transition-all duration-300 ease-in-out active:bg-white active:scale-102 text-black font-bold w-full" href="#home">Home</a>
+
+            <a class="block rounded-[8px] px-3 py-2 bg-yellow-400 transition-all duration-300 ease-in-out active:bg-white active:scale-102 text-black font-bold w-full" href="#profile">Our Profile</a>
+
+            <a class="block rounded-[8px] px-3 py-2 bg-yellow-400 transition-all duration-300 ease-in-out active:bg-white active:scale-102 text-black font-bold w-full" href="#portfolio">Portfolio</a>
+
+            <a class="block rounded-[8px] px-3 py-2 bg-yellow-400 transition-all duration-300 ease-in-out active:bg-white active:scale-102 text-black font-bold w-full" href="#contact">Message Us</a>
+        </div>     
+
+    </header>
+
+    <!--Back to Top Button-->
+    <button onclick="topFunction()" id="top" title="Go to top">^<br>Top</button>
+
+    <!--Main Content-->
+    <main>
+
+        <!--Home Section-->
+        <section class="p-[16px] min-h-[500px]" id="home">
+            <h1 class="text-[24px] font-bold">Welcome <span id="welcome-speech"></span> to 1weekeateggs Portfolio</h1>
+            <p class="text-[16px]">This is a website made for practicing Tailwind CSS and Custom CSS.</p>
+            <div class="banner-img-home shadow-md"></div>
+        </section>
+
+        <hr/>
+
+        <!--Profile Section-->
+        <section class="p-[16px] min-h-[500px]" id="profile">
+            <h2 class="text-[20px] font-semibold">Our Profile</h2>
+            <div class="space-y-4">
+            <p class="text-justify leading-relaxed">
+                Fathru Nabhan Rahman is a dedicated and passionate chemist with a strong academic background from Gadjah Mada University, holding both Bachelor's and Master's degrees in Chemistry. Specializing in <span class="font-semibold text-yellow-500">Analytical and Physical Chemistry</span>, Fathru has a keen interest in <span class="font-medium">polymer science, environmental sustainability, and innovative material development</span>.
+            </p>
+
+            <div class="bg-sky-50/50 p-4 rounded-lg border border-sky-100">
+                <h3 class="font-bold text-lg text-sky-700 mb-3">Key Highlights:</h3>
+                <ul class="space-y-2">
+                <li class="flex items-start gap-2">
+                    <span class="text-sky-500">🎓</span>
+                    <span class="text-justify leading-relaxed"><span class="font-semibold">Master's in Chemistry (GPA: 3.74/4.00)</span> – Research on hydrogel-based fertilizers</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-sky-500">🔬</span>
+                    <span class="text-justify leading-relaxed"><span class="font-semibold">Industrial Experience</span> – Wastewater analysis and natural dye development</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-sky-500">🌱</span>
+                    <span class="text-justify leading-relaxed"><span class="font-semibold">Sustainability Advocate</span> – Eco-friendly solutions and circular economy</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-sky-500">🎨</span>
+                    <span class="text-justify leading-relaxed"><span class="font-semibold">Creative Leadership</span> – Designed infographics and organizational branding</span>
+                </li>
+                </ul>
+            </div>
+                <a class="block rounded-[8px] px-3 py-2 m-[8px] bg-yellow-400 transition-all duration-300 ease-in-out hover:bg-white hover:scale-105 active:bg-white active:scale-102 text-black flex justify-center items-center font-bold w-full" href="#contact">Let's collaborate on innovative chemistry projects!</a>
+            </div>
+            </div>
+            <div class="banner-img-profile shadow-md"></div>
+        </section>
+
+        <hr/>
+
+        <!--Portfolio Section-->
+        <section class="p-[16px] min-h-[500px]" id="portfolio">
+            <h2 class="text-[20px] font-semibold">Portfolio</h2>
+            <p class="text-[16px] text-justify leading-relaxed">I translate ideas into visceral visuals where every stroke carries intention and empty spaces breathe. Specializing in editorial illustration & brand storytelling. Check out our latest projects and works that showcase our skills and creativity.</p>
+
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img class="shadow-md" src="/Images/Illustration65.webp" style="width:100%">
+                <div class="text">Half Body</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img class="shadow-md" src="/Images/Illustration64.webp" style="width:100%">
+                <div class="text">Chibi</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img class="shadow-md" src="/Images/Illustration53.webp" style="width:100%">
+                <div class="text">Full Background</div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </section>
+
+        <hr/>
+
+        <!--Contact Section-->
+        <section class="p-[16px] min-h-[500px]" id="contact">
+            <h2 class="text-[20px] font-semibold">Message Us</h2>
+            <p class="text-[16px] mb-[4px]">Feel free to reach out to us for any inquiries or questions.</p>
+
+            <div class="flex">
+                <form class="flex-1">
+                    <div class="form-group">
+                        <label for="name-input">Nama</label><span class="colon">:</span>
+                        <input type="text" id="name-input" placeholder="Masukkan nama Anda">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label><span class="colon">:</span>
+                        <input type="email" id="email-input" placeholder="contoh@email.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone-input">No. HP</label><span class="colon">:</span>
+                        <input type="tel" id="phone-input" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}"placeholder="0812-3456-7890">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="birthday">Tanggal Lahir</label><span class="colon">:</span>
+                        <input type="date" id="birthday" name="birthday" value="">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="male">Jenis Kelamin</label><span class="colon">:</span>
+
+                        <div class="gender">
+                            <label for="male"><input type="radio" id="male" name="gender" value="Laki-Laki">
+                            Laki-Laki</label>
+
+                            <label for="female"><input type="radio" id="female" name="gender" value="Perempuan">
+                            Perempuan</label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="pesan">Pesan</label><span class="colon">:</span>
+                        <textarea id="pesan" name="pesan" placeholder="Ketik pesan Anda..."></textarea>
+                    </div>
+
+                    <!--Pakai Tailwind-->
+                    <button class="border-none rounded-[8px] px-[8px] py-[4px] bg-red-500 text-white cursor-pointer transition-all duration-300 ease-in-out hover:bg-red-700 hover:text-gray-100 hover:scale-105" type="reset">Reset</button>
+                    
+                    <!--Pakai Custom CSS-->
+                    <button class="send" type="button" onclick="validateform()">Send</button>
+                </form>
+
+                <aside class="min-h-[100px] flex-1 rounded-[4px]">
+                    <p id="result-form" class="p-[8px]"></p>
+                </aside>
+            </div>
+        </section>
+
+        <hr/>
+    </main>
+
+    <!--Footer-->
+    <footer class="flex flex-col items-center justify-center bg-gray-100 text-gray-700 p-6 mt-8">
+        <p class="m-[16x]">&copy; 2025 1weekeateggs. All rights reserved.</p>
+        <div class="max-w-4xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+    
+            <div class="flex items-center gap-4">
+                <a href="https://www.linkedin.com/in/fathrunr/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    class="text-gray-700 hover:text-blue-600 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                </a>
+                
+                <a href="https://github.com/1weekeateggs/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    class="text-gray-700 hover:text-gray-900 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </a>
+                
+                <a href="mailto:fathrunr@gmail.com" 
+                    class="text-gray-700 hover:text-red-500 transition-colors flex items-center gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                    </svg>
+                    <span class="text-sm hidden md:inline">fathrunr@gmail.com</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    
+    <!--Scripts-->
+    <script src="JS\script.js"></script>
+</body>
+</html>
